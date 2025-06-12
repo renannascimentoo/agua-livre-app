@@ -21,6 +21,9 @@ export default function RootLayout() {
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
       <Stack>
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+        <Stack.Screen name="nova-denuncia" options={{ title: 'Nova Denúncia', headerShown: false }} />
+        <Stack.Screen name="mapa" options={{ title: 'Mapa de Ocorrências' }} />
+        <Stack.Screen name="minhas-denuncias" options={{ title: 'Minhas Denúncias' }} />
         <Stack.Screen name="+not-found" />
       </Stack>
       <StatusBar style="auto" />
